@@ -49,7 +49,5 @@ public class Main {
         int myInt= 2^29;
         myInt += 2^31 - 1;
         System.out.println("myInt - " + myInt);
-
     }
     }
-
