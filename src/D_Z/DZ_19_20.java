@@ -28,7 +28,6 @@ public class DZ_19_20 {
         System.out.println("Среднее значение массива равно: " + result / array.length);
     }
 
-
     static void zadanye2() {
         double[] massive = {3.5, 2.1, -4.8, 7.4, -1.6, 8.9};
         double min = massive[0];
