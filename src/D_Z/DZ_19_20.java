@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class DZ_19_20 {
     public static void main(String[] args) {
-       zadanye1();
-       zadanye2();
-       zadanye3();
-       zadanye4();
-       zadanye5();
+        zadanye1();
+        zadanye2();
+        zadanye3();
+        zadanye4();
+        zadanye5();
     }
 
 
@@ -22,11 +22,8 @@ public class DZ_19_20 {
         array[5] = 24;
 
         int result = 0;
-
         for (int digit : array) {
-
             result += digit;
-
         }
         System.out.println("Среднее значение массива равно: " + result / array.length);
     }
@@ -70,7 +67,7 @@ public class DZ_19_20 {
 
     static void zadanye4() {
         String str = "Сегодня погода будет солнечной";
-        char [] chArray = str.toCharArray();
+        char[] chArray = str.toCharArray();
         String str1 = str.replace(' ', '_');
 
         System.out.println(Arrays.toString(chArray));
