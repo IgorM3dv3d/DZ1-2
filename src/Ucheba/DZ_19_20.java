@@ -1,4 +1,4 @@
-package D_Z;
+package Ucheba;
 
 import java.util.Arrays;
 
