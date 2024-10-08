@@ -7,6 +7,7 @@ public class Method {
     private static int[][] String;
 
     public static int square(int value) {
+
         return value * value;
     }
 
