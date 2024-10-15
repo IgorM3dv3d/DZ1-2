@@ -22,5 +22,10 @@ public class Main {
         words[5] = "Globus";
         words[6] = "Eagle";
         System.out.println(Arrays.toString(Method.cornerValuesArray(words)));
+
+
+        System.out.println(Method.factR(7));
+        System.out.println(Method.factR(9));
+        System.out.println(Method.factR(12));
     }
 }
