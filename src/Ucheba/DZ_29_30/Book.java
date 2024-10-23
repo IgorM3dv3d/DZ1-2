@@ -5,7 +5,6 @@ public class Book {
     private Author author;
     private Integer year;
 
-
     public Book() {}
 
     public Book(String title, Author author, Integer year) {
