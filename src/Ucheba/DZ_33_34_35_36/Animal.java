@@ -5,6 +5,7 @@ public class Animal {
     String cat;
     String bird;
 
+
     public Animal(String dog, String cat, String bird) {
         this.dog = dog;
         this.cat = cat;
