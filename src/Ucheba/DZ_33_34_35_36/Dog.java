@@ -7,10 +7,15 @@ public class Dog extends Animal {
         super(dog, cat, bird);
     }
 
-    public Dog() {}
+    public Dog() {
+    }
 
     @Override
     public void makeSound() {
-        System.out.println("Гав-гав");
+        String name = "Собака";
+        System.out.println( name + ": " + "Гав-гав");
+    }
+    public void eat() {
+        System.out.println("Собака ест кость");
     }
 }

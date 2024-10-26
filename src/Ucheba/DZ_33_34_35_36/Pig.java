@@ -8,4 +8,8 @@ public class Pig extends Animal{
         String name = "Свинья";
         System.out.println( name + ": " + "Хрю-хрю");
     }
+
+    public void eat() {
+        System.out.println("Свинья ест сено");
+    }
 }

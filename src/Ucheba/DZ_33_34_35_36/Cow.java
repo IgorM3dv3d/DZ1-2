@@ -9,5 +9,9 @@ public class Cow extends Animal {
         String name = "Корова";
         System.out.println( name + ": " + "Мууууу");
     }
+
+    public void eat() {
+        System.out.println("Корова ест траву");
+    }
 }
 

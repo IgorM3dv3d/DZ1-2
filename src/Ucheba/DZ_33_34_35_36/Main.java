@@ -19,6 +19,9 @@ public class Main {
         System.out.println("Животное издает звук: ");
     }
 
+    void eat(){
+    }
+
     public String getCow() {
         return Cow;
     }
@@ -52,6 +55,7 @@ public class Main {
 
         for (Animal animal : animals) {
             animal.makeSound();
+            animal.eat();
         }
     }
 }

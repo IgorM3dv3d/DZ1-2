@@ -19,6 +19,9 @@ public class Animal {
         System.out.println("Животное издает звук: ");
     }
 
+    void eat(){
+    }
+
     public String getDog() {
         return dog;
     }
@@ -53,6 +56,7 @@ public class Animal {
 
         for (Animal animal : animals) {
             animal.makeSound();
+            animal.eat();
         }
     }
 }

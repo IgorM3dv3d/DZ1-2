@@ -16,7 +16,12 @@ public class Bird extends Animal {
 
     @Override
     public void makeSound(){
-        System.out.println("Чик-чирик");
+        String name = "Птица";
+        System.out.println( name + ": " + "Чик-чирик");
+    }
+
+    public void eat(){
+        System.out.println("Птица ест семена");
     }
 }
 

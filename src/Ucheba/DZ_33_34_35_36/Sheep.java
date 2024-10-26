@@ -8,4 +8,8 @@ public class Sheep extends Animal {
         String name = "Овца";
         System.out.println( name + ": " + "Бееее");
     }
+
+    public void eat() {
+        System.out.println("Овца ест траву");
+    }
 }
