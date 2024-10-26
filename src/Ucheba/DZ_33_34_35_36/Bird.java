@@ -12,6 +12,7 @@ public class Bird extends Animal {
         this.canFly = canFly;
     }
 
+
     @Override
     public void makeSound(){
         System.out.println("Чик-чирик");

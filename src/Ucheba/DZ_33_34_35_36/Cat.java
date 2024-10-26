@@ -6,8 +6,7 @@ public class Cat extends Animal {
         super(dog, cat, bird);
     }
 
-    public Cat() {
-    }
+    public Cat() {}
 
     @Override
     public void makeSound(){

@@ -42,7 +42,6 @@ public class Animal {
         this.bird = bird;
     }
 
-
     public static void main(String[] args) {
         Animal animal1 = new Dog();
         Animal animal2 = new Cat();
@@ -54,7 +53,5 @@ public class Animal {
         for (Animal animal : animals) {
             animal.makeSound();
         }
-
-        
     }
 }

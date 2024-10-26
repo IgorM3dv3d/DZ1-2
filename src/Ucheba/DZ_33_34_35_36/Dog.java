@@ -8,8 +8,7 @@ public class Dog extends Animal {
         super(dog, cat, bird);
     }
 
-    public Dog() {
-    }
+    public Dog() {}
 
     @Override
     public void makeSound() {

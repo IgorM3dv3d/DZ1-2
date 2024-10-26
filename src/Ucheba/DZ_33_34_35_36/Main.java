@@ -5,7 +5,6 @@ public class Main {
     String Pig;
     String Sheep;
 
-
     public Main(String cow, String pig, String sheep) {
         Cow = cow;
         Pig = pig;
