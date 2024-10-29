@@ -6,6 +6,7 @@ public class Bird extends Animal {
     public Bird(String name, boolean canFly) {
         super(name);
         this.canFly = canFly;
+
     }
 
     @Override
@@ -21,5 +22,19 @@ public class Bird extends Animal {
     public void eat() {
         System.out.println("Семена");
     }
+
+    @Override
+    public void move() {
+
+        if (canFly = true) {
+            System.out.println("полётом");
+        }
+        else {
+            if (canFly = false) {
+                System.out.println("Птица не умеет летать");
+            }
+        }
+    }
 }
+
 
