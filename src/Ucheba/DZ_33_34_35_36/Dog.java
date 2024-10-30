@@ -1,17 +1,32 @@
 package Ucheba.DZ_33_34_35_36;
 
-import Ucheba.DZ_20_21.Method;
-
-public class Dog extends Animal {
-
-    public Dog(String dog, String cat, String bird) {
-        super(dog, cat, bird);
+public class Dog extends Animal implements Pet {
+    public Dog(String name) {
+        super(name);
     }
-
-    public Dog() {}
 
     @Override
     public void makeSound() {
         System.out.println("Гав-гав");
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("Кость");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("на лапах");
+    }
+
+    @Override
+    public void play() {
+        System.out.println("Бегает за палкой");
+    }
+
+    @Override
+    public void beFriendly() {
+        System.out.println("Энергично виляет хвостом");
     }
 }
