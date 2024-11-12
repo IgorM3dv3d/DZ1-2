@@ -1,16 +1,31 @@
 package Ucheba.DZ_37_38;
 
+import java.util.Random;
+
+
 public class Player {
-    private int stamina = 9;
+    private int stamina;
 
-    private final static int MAX_STAMINA = 10;
+    Random r = new Random();
 
-    private final static int MIN_STAMINA = 0;
+    private final Game game;
+
+    private final String name;
+
+    private final static Integer MAX_STAMINA = 10;
+
+    private final static Integer MIN_STAMINA = 0;
 
     static private int countPlayer = 0;
 
-    public Player(String name) {
-        countPlayer++;
+    public Player(Game game, String name) {
+        this.stamina = r.nextInt(MIN_STAMINA + 6, MAX_STAMINA + 1);
+        this.name = name;
+        this.game = game;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getStamina() {
@@ -32,9 +47,9 @@ public class Player {
     public void run() {
         if (stamina > 0) {
             stamina--;
-            System.out.println("игрок пробежал. " + "Выносливость равна " + stamina);
-        } else {
-            System.out.println("игрок устал");
+            System.out.println(name + " пробежал. " + "Выносливость стала равна: " + stamina);
+        } else if (stamina == 0) {
+            System.out.println(name + " устал и ушёл отдыхать.");
         }
     }
 
@@ -47,5 +62,13 @@ public class Player {
         } else {
             System.out.println("На поле нет свободных мест");
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "name = '" + name + '\'' +
+                ", stamina = " + stamina +
+                '}';
     }
 }

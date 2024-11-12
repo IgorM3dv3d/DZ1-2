@@ -2,24 +2,53 @@ package Ucheba.DZ_37_38;
 
 public class Main {
     public static void main(String[] args) {
+        Game game = new Game();
+        System.out.println(game.getPlayer());
+        game.info();
 
-        Player player1 = new Player("Alexei");
-        Player player2 = new Player("Bob");
-        Player player3 = new Player("Jack");
-        Player player4 = new Player("Ivan");
-        Player player5 = new Player("George");
-        Player player6 = new Player("Sasha");
+        game.addPlayer("Alexei");
+        game.checkName("Alexei");
+
+        game.addPlayer("Bob");
+        game.checkName("Bob");
+
+        game.addPlayer("Jack");
+
+        game.checkName("Denis");
+        System.out.println(game.getPlayer());
+
+        game.addPlayer("Ivan");
+        game.addPlayer("George");
+        game.addPlayer("Sasha");
+
+        System.out.println(game.getPlayer());
+
+        game.addPlayer("Michael");
+
+        game.info();
 
         for (int i = 0; i < Player.getMaxStamina(); i++) {
-            if (Player.getMinStamina() >= 0) {
-                player1.run();
+            if (game.getPlayer().get(4).getStamina() >= 0) {
+                game.getPlayer().get(4).run();
             } else {
                 break;
             }
-            System.out.println();
         }
 
-        System.out.println("Количество игроков на поле: " + Player.getCountPlayer());
-        Player.info();
+        for (int i = 0; i < Player.getMaxStamina(); i++) {
+            if (game.getPlayer().get(2).getStamina() >= 0) {
+                game.getPlayer().get(2).run();
+            } else {
+                break;
+            }
+        }
+
+        for (int i = 0; i < Player.getMaxStamina(); i++) {
+            if (game.getPlayer().get(1).getStamina() >= 0) {
+                game.getPlayer().get(1).run();
+            } else {
+                break;
+            }
+        }
     }
 }
